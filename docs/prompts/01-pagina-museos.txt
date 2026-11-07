@@ -1,0 +1,69 @@
+Diseña una sola pantalla de alta fidelidad para una aplicación web de escritorio (ancho 1440 px). Es la página inicial del software. No diseñes otras pantallas, ni modales, ni formularios, ni flujos.
+
+Producto: Sistema de Administración de Museos.
+Frase corta bajo el nombre: Organiza · Conserva · Comparte.
+Idioma de toda la interfaz: español.
+Esta pantalla solo lista los museos registrados. El usuario entra aquí para ver qué museos existen en el software.
+
+Sistema visual, para reutilizarlo después en otras pantallas:
+- Producto cultural e institucional, de patrimonio. Fondo hueso cálido, no gris de dashboard genérico.
+- Encabezado azul marino profundo, texto blanco. Acento en un dorado apagado o terracota, usado con moderación.
+- Tipografía con carácter editorial en el título del producto y sans serif clara en el contenido.
+- Tarjetas blancas, borde suave, sombra muy ligera, esquinas poco redondeadas.
+- Mucho aire. Nada de gradientes morados, glassmorphism, ilustraciones 3D ni iconos decorativos sueltos.
+- Define y aplica en esta pantalla: color de encabezado, color de acento, fondo, tarjeta, título y texto secundario.
+
+Estructura de esta única pantalla, de arriba hacia abajo:
+
+1. Barra superior fija.
+   - A la izquierda, un símbolo sencillo de edificio clásico con columnas y el nombre "Sistema de Administración de Museos".
+   - Debajo del nombre, en tamaño menor: "Organiza · Conserva · Comparte".
+   - A la derecha, un botón secundario de texto "Registrar museo". Solo el botón. No abras un formulario.
+
+2. Cuerpo.
+   - Título de página: "Museos".
+   - Subtítulo: "Inventario de museos registrados en el sistema."
+   - A la derecha del título, el conteo "4 museos".
+   - Debajo, un campo de búsqueda con el placeholder "Buscar por nombre". Sin otros filtros.
+
+3. Rejilla de tarjetas, dos columnas, con exactamente estos cuatro museos de ejemplo. No inventes museos adicionales ni cambies estos datos.
+
+   Museo 1
+   - name: Museo de Arte del Río
+   - description: Colección de pintura y escultura moderna, con salas dedicadas al arte del siglo XX y a exposiciones temporales.
+   - latitude: 4.5981
+   - longitude: -74.0760
+   - landing_page_url: https://museodelrio.example
+
+   Museo 2
+   - name: Museo de Historia Natural Andina
+   - description: Especímenes de fauna, flora y geología de la región andina, organizados para consulta del público y de investigadores.
+   - latitude: 6.2518
+   - longitude: -75.5636
+   - landing_page_url: https://historinanatural.example
+
+   Museo 3
+   - name: Museo Arqueológico del Altiplano
+   - description: Piezas arqueológicas de cerámica, orfebrería y piedra, conservadas como patrimonio de las culturas del altiplano.
+   - latitude: 5.0703
+   - longitude: -75.5138
+   - landing_page_url: https://arqueoaltiplano.example
+
+   Museo 4
+   - name: Casa Museo del Patrimonio Local
+   - description: Casa histórica con objetos de la vida cotidiana, documentos y fotografías de la comunidad.
+   - latitude: 3.4516
+   - longitude: -76.5320
+   - landing_page_url: https://casamuseo.example
+
+Contenido obligatorio de cada tarjeta, en este orden, con estas etiquetas visibles:
+- El name como título de la tarjeta.
+- La description en dos líneas como máximo.
+- Una línea con un pin y las coordenadas reales, en el formato "4.5981, -74.0760". No sustituyas las coordenadas por un nombre de ciudad: el modelo solo guarda latitude y longitude.
+- Una línea "Sitio web" con el landing_page_url mostrado como enlace, en texto pequeño.
+- No muestres el id.
+- No muestres salas, obras, artistas, categorías ni recorridos. Esas entidades existen en el sistema, pero no en esta pantalla.
+
+La tarjeta completa debe verse seleccionable, como entrada al museo, pero no diseñes la pantalla de destino.
+
+No incluyas barra lateral, menú de otros módulos, login, usuario, notificaciones, mapa embebido, estadísticas, gráficas ni pie de página largo. No diseñes el estado vacío: la pantalla se ve con los cuatro museos.
